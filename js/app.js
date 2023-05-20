@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
     })
     const conteudo = document.getElementById('conteudo')
     
-    carregarHtml(`${"_home"}.html`);
+    carregarHtml(`${"_home"}`);
   
 })
 
 const carregarHtml = (pagina) => {
-    fetch(pagina)
+    fetch(`./${pagina}.html`)
     .then( resp => resp.text())
     .then( resp => conteudo.innerHTML = resp)   
 }
