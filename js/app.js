@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
     })
     const conteudo = document.getElementById('conteudo')
     
-    carregarHtml(`${"_home"}`);
+    carregarHtml(`${"home"}`);
   
 })
 
