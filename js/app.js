@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', (evt)=>{
 
+    const conteudo = document.getElementById('conteudo')
+
     document.querySelectorAll('a')
         .forEach( (elm)=>{
         elm.addEventListener('click', (e)=>{
-            e.preventDefault()
+            e.preventDefault();
+            alert(e.target)
+            fetch(e.target)
+            .then(resp=>resp.text())
+            .then(resp=>conteudo.innerHTML = resp)
         })
     })
-    const conteudo = document.getElementById('conteudo')
-    
-    carregarHtml(`${"home"}`);
-  
 })
 
-const carregarHtml = (pagina) => {
-    fetch(`./${pagina}.html`)
-    .then( resp => resp.text())
-    .then( resp => conteudo.innerHTML = resp)   
-}
+
