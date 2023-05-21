@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (evt)=>{
 
-    const conteudo = document.getElementById('conteudo')
+    //const conteudo = document.getElementById('conteudo')
 
     // document.querySelectorAll('a')
     //     .forEach( (elm)=>{
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
     // carregarPagina('_home')
 })
 
-const carregarPagina = (pagina) => {
-    fetch(`${pagina}` )
-            .then(resp=>resp.text())
-            .then(resp=>conteudo.innerHTML = resp)
-}
+// const carregarPagina = (pagina) => {
+//     fetch(`${pagina}` )
+//             .then(resp=>resp.text())
+//             .then(resp=>conteudo.innerHTML = resp)
+// }
