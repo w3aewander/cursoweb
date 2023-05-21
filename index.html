@@ -108,5 +108,14 @@
      </div>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', (evt)=>{
+
+      fetch('_home.html')
+        .then( resp => resp.text())
+        .then( resp => document.getElementById('conteudo').innerHTML = resp)
+       
+    })
+  </script>
 </body>
 </html>
