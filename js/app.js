@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
             carregarPagina(e.target);
         })
     })
+
+    carregarPagina('_home')
 })
 
 const carregarPagina = (pagina) => {
