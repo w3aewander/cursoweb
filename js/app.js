@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
         .forEach( (elm)=>{
         elm.addEventListener('click', (e)=>{
             e.preventDefault();
-            alert(e.target)
-            fetch(e.target)
+            //alert(e.target)
+            fetch(`${e.target}.html` )
             .then(resp=>resp.text())
             .then(resp=>conteudo.innerHTML = resp)
         })
