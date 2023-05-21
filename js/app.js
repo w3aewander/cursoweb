@@ -19,3 +19,8 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
 //             .then(resp=>resp.text())
 //             .then(resp=>conteudo.innerHTML = resp)
 // }
+
+// sobe para topo da página
+function subir(){
+    scrollTo(0,0);
+}
