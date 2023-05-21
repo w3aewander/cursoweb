@@ -2,16 +2,16 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
 
     const conteudo = document.getElementById('conteudo')
 
-    document.querySelectorAll('a')
-        .forEach( (elm)=>{
-        elm.addEventListener('click', (e)=>{
-            e.preventDefault();
+    // document.querySelectorAll('a')
+    //     .forEach( (elm)=>{
+    //     elm.addEventListener('click', (e)=>{
+    //         e.preventDefault();
  
-            carregarPagina(e.target);
-        })
-    })
+    //         carregarPagina(e.target);
+    //     })
+    // })
 
-    carregarPagina('_home')
+    // carregarPagina('_home')
 })
 
 const carregarPagina = (pagina) => {
