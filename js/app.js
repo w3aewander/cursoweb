@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (evt)=>{
 })
 
 const carregarPagina = (pagina) => {
-    fetch(`${pagina}` )
+    fetch(`${pagina}/` )
             .then(resp=>resp.text())
             .then(resp=>conteudo.innerHTML = resp)
 }
