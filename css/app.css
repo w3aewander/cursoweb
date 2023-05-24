@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-
+@keyframes anima-scroll {
+    from{
+        visibility: hidden;
+        background-color: #eee;
+    }
+    to{
+        visibility: visible;
+        background-color: #f6f3f2;
+    }
+}
 html {
     scroll-behavior: smooth;
+    
   }
-  
+
+body {
+ opacity: 1;
+ transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+} 
+
 .text-justify{
     text-align:justify !important;
 }
