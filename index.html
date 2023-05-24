@@ -36,7 +36,7 @@
 
           <li class="nav-item"><a class="nav-link" href="#html"><i class="fa fa-code"></i> HTML</a></li>
           <li class="nav-item"><a class="nav-link" href="#css"> <i class="fa fa-file-code"></i> CSS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#js">  <i class="fa fa-sitemap"></i> JS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#js"> <i class="fa fa-sitemap"></i> JS</a></li>
 
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -300,11 +300,74 @@
     <div class="card mt-5">
       <div class="card-header">
         <div class="card-title">
-          A linguagem HTML
+          <h4>A Linguagem HTML</h4>
         </div>
       </div>
       <div class="card-body">
-        gerando conteúdo...
+      <textarea rows="75" class="form-control border-0">
+HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto) e é a linguagem padrão para a criação e estruturação de páginas da web. O HTML usa marcadores (tags) para definir elementos e estruturar o conteúdo de uma página. Cada marcador é colocado entre < > e a maioria deles possui uma tag de abertura e uma tag de fechamento, delimitando o conteúdo que está dentro delas.
+
+Aqui estão alguns conceitos fundamentais:
+
+Tags: As tags são os blocos de construção básicos do HTML. Elas são usadas para marcar e definir elementos em uma página. Por exemplo, a tag <h1> é usada para definir um cabeçalho de nível 1, a tag <p> é usada para definir um parágrafo e assim por diante.
+
+Elementos: Os elementos são formados pelas tags de abertura e fechamento, além do conteúdo entre elas. Por exemplo:
+
+&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+
+Nesse exemplo, a tag <p> é o elemento, e o texto "Este é um parágrafo de exemplo." é o conteúdo desse parágrafo.
+
+Atributos: Os atributos fornecem informações adicionais às tags e geralmente são usados para modificar o comportamento ou a aparência dos elementos. Eles são especificados dentro das tags de abertura. Por exemplo:
+
+&lt;a href="https://www.exemplo.com"&gt;Link para Exemplo&lt;/a&gt;
+
+Nesse exemplo, o atributo "href" define o URL de destino do link.
+
+Agora, vamos discutir a estrutura de uma página HTML completa:
+
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+          <title>Título da Página</title>
+        </head>
+        <body>
+          <h1>Título Principal</h1>
+          <p>Este é um parágrafo de exemplo.</p>
+          <!-- Mais elementos podem ser adicionados aqui -->
+        </body>
+        </html>
+        
+
+A estrutura básica de uma página HTML contém as seguintes partes:
+
+&lt;!DOCTYPE html&gt;: Indica a versão do HTML usada no documento.
+&lt;html&gt;: Elemento raiz que engloba todo o conteúdo da página.
+&lt;head&gt;: Cabeçalho da página, onde são definidas informações sobre o documento, como o título exibido na barra de título do navegador.
+&lt;title&gt;: Define o título da página.
+&lt;body&gt;: Corpo da página.
+
+&lt;h1&gt;: Um exemplo de cabeçalho de nível 1. Os cabeçalhos são usados para títulos e subdivisões importantes do conteúdo da página.
+&lt;p&gt;: Um exemplo de parágrafo. Os parágrafos são usados para textos normais.
+
+Comentários: Os comentários são usados para adicionar notas ou explicar partes do código. Eles não são renderizados na página e servem apenas para referência do desenvolvedor.
+Dentro do &lt;body&gt;, você pode adicionar mais elementos HTML, como imagens, listas, tabelas, formulários e muito mais, para estruturar e formatar o conteúdo da sua página.
+    
+Aqui estão alguns exemplos adicionais de elementos HTML que você pode utilizar:
+    
+&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;: Insere uma imagem na página. O atributo src especifica o caminho para a imagem e o atributo alt fornece uma descrição alternativa para a imagem.
+&lt;ul&gt; e &lt;li&gt;: Cria uma lista não ordenada. 
+A tag &lt;ul&gt; é usada para criar a lista e a tag 
+&lt;li&gt; é usada para cada item da lista.
+&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;: Cria uma tabela. 
+A tag &lt;table&gt; define a tabela, &lt;tr&gt; define uma linha, &lt;th&gt; define um cabeçalho da tabela 
+&lt;td&gt; define uma célula da tabela.
+&lt;form&gt;, &lt;input&gt;, &lt;button&gt;: Cria um formulário. A tag &lt;form&gt; envolve todo o formulário, &lt;input&gt; é usado para criar campos de entrada, como campos de texto ou caixas de seleção, e &lt;button&gt; cria um botão.            
+
+Lembre-se de fechar todas as tags abertas e respeitar a estrutura hierárquica dos elementos. O HTML é uma linguagem de marcação e depende da correta aninhamento e fechamento de tags para funcionar corretamente.
+
+      </textarea>
+
       </div>
     </div>
   </div>
@@ -316,16 +379,18 @@
     <div class="card mt-5">
       <div class="card-header">
         <div class="card-title">
-          A linguagem CSS
+          <h4>A Linguagem CSS</h4>
         </div>
       </div>
       <div class="card-body">
         <p>
-          O CSS é uma linguagem de estilo que permite controlar a aparência e o layout dos elementos em uma página web. Aqui estão alguns conceitos básicos que você precisa conhecer:
+          O CSS é uma linguagem de estilo que permite controlar a aparência e o layout dos elementos em uma página web.
+          Aqui estão alguns conceitos básicos que você precisa conhecer:
         </p>
         <h5>Seletores</h5>
         <p>
-           Os seletores são usados para identificar os elementos HTML aos quais você deseja aplicar estilos. Existem vários tipos de seletores, incluindo seletores de tag, classe, ID e seletores avançados.
+          Os seletores são usados para identificar os elementos HTML aos quais você deseja aplicar estilos. Existem
+          vários tipos de seletores, incluindo seletores de tag, classe, ID e seletores avançados.
         </p>
         <h6>Exemplo de seletor de tag:</h6>
         <p>
@@ -338,74 +403,159 @@
 
         <h6>Exemplo de seletor de classe:</h6>
         <p>
-        <code>
+          <code>
           .destaque {
             font-weight: bold;
           }          
         </code>
-      </p>
-      <h6>Exemplo de seletor de ID:</h6>
-      <p>
-        <code>
+        </p>
+        <h6>Exemplo de seletor de ID:</h6>
+        <p>
+          <code>
           #logo {
             width: 200px;
           }          
         </code>
-      </p>
-      <h6>Propriedades de valores</h6>
-      <p>
-        Propriedades e valores: As propriedades são usadas para definir os estilos dos elementos selecionados. Cada propriedade possui um valor que especifica como o estilo deve ser aplicado. Aqui estão alguns exemplos:
-      </p>
-      <h6>Definindo a cordo do texto</h6>
-      <p>
-        <code>
+        </p>
+        <h6>Propriedades de valores</h6>
+        <p>
+          Propriedades e valores: As propriedades são usadas para definir os estilos dos elementos selecionados. Cada
+          propriedade possui um valor que especifica como o estilo deve ser aplicado. Aqui estão alguns exemplos:
+        </p>
+        <h6>Definindo a cordo do texto</h6>
+        <p>
+          <code>
           color: red;
         </code>
-      </p>
-      <h6>Definindo o tamanho da fonte</h6>
-      <p>
-        <code>
+        </p>
+        <h6>Definindo o tamanho da fonte</h6>
+        <p>
+          <code>
           font-size: 16px;
         </code>
-      </p>
-      <h6>Definindo a margem</h6>
-      <p>
-        <code>
+        </p>
+        <h6>Definindo a margem</h6>
+        <p>
+          <code>
           margin-top: 10px;
           margin-bottom: 10px;
         </code>
-      </p>
-      <h5>Classes e IDs</h5>
-      <p>
-        Classes e IDs são atributos especiais que você pode adicionar aos elementos HTML para selecioná-los de forma mais específica com o CSS. As classes são usadas para agrupar elementos com estilos semelhantes, enquanto os IDs são usados para identificar um elemento exclusivo na página.
-      </p>
-      <h5>Exemplo de uso de classes</h5>
-      <p>
-        <textarea class="form-control border-0 margin: 0;" readonly ><p class="destaque">Este parágrafo possui uma classe de destaque.</p></textarea>
-      </p>
-      <h5>Exemplo de uso de ID</h5>
-      <p>
-        <textarea class="form-control border-0 margin: 0;" readonly ><div id="logo">Meu logotipo</div></textarea>
-      </p>
+        </p>
+        <h5>Classes e IDs</h5>
+        <p>
+          Classes e IDs são atributos especiais que você pode adicionar aos elementos HTML para selecioná-los de forma
+          mais específica com o CSS. As classes são usadas para agrupar elementos com estilos semelhantes, enquanto os
+          IDs são usados para identificar um elemento exclusivo na página.
+        </p>
+        <h5>Exemplo de uso de classes</h5>
+        <p>
+          <textarea class="form-control border-0 margin: 0;"
+            readonly><p class="destaque">Este parágrafo possui uma classe de destaque.</p></textarea>
+        </p>
+        <h5>Exemplo de uso de ID</h5>
+        <p>
+          <textarea class="form-control border-0 margin: 0;" readonly><div id="logo">Meu logotipo</div></textarea>
+        </p>
 
-      <h5>Box Model</h5>
-      <p>
-        O Box Model é um conceito importante no CSS que descreve como o espaço é alocado em torno de um elemento HTML. Cada elemento é composto por uma caixa retangular que inclui a margem, o preenchimento (padding), a borda e o conteúdo propriamente dito.
-      </p>
+        <h5>Box Model</h5>
+        <p>
+          O Box Model é um conceito importante no CSS que descreve como o espaço é alocado em torno de um elemento HTML.
+          Cada elemento é composto por uma caixa retangular que inclui a margem, o preenchimento (padding), a borda e o
+          conteúdo propriamente dito.
+        </p>
 
-      <h5>Estilização de texto</h5>
-      <p>  
-        Você pode modificar a aparência do texto usando propriedades como font-family, font-size, font-weight, text-align, entre outras. Isso permite controlar o tipo de fonte, o tamanho, o peso, a cor e o alinhamento do texto.
-      </p>
+        <h5>Estilização de texto</h5>
+        <p>
+          Você pode modificar a aparência do texto usando propriedades como font-family, font-size, font-weight,
+          text-align, entre outras. Isso permite controlar o tipo de fonte, o tamanho, o peso, a cor e o alinhamento do
+          texto.
+        </p>
 
-       <h5>Além do que foi apresentado aqui...</h5>
-      <p>
-        Esses são apenas alguns dos conceitos básicos do CSS. À medida que você se familiarizar com esses fundamentos, poderá explorar tópicos mais avançados, como posicionamento de elementos, layout responsivo, animações e muito mais.
-      </p>
-      <p>
-        Uma ótima maneira de praticar esses conceitos é criando uma página web simples e estilizada utilizando CSS puro. Comece com um HTML básico e, em seguida, adicione regras de estilo CSS para personalizar o design da página.
-      </p>  
-      </p>
+        <h5>Alguma formas de aplicar estilos em um página HTML</h5>
+        <p>
+          Existem algumas maneiras diferentes de chamar estilos em uma página HTML. Aqui estão as formas mais comuns de
+          aplicar estilos:
+        </p>
+        <h6>Estilos internos (Internal Styles)</h6>
+        <p>
+          Os estilos internos são definidos dentro da própria página HTML, entre as tags &lt;style&gt; e &lt;/style&gt.
+          Eles são aplicados apenas à página específica em que estão presentes. Aqui está um exemplo:
+        </p>
+        <textarea rows="15" class="form-control border-0 bg-dark text-white" readonly>
+        <html>
+          <head>
+              <style>
+              /* Estilos internos */
+                p {
+                color: blue;
+                }
+              </style>
+            </head>
+            <body>
+                <p>Este parágrafo terá a cor azul.</p>
+            </body>
+        </html>
+        </textarea>
+        <br>
+        <h6>Estilos embutidos (inline styles)</h6>
+        <p>
+          Os estilos embutidos são aplicados diretamente aos elementos HTML, usando o atributo style. Eles afetam apenas
+          o elemento específico em que são definidos. Aqui está um exemplo:
+        </p>
+        <p class="bg-dark text-white p-2">
+          &lt;p style="color: blue;"&gt;Este parágrafo terá a cor azul.&lt;/p&gt;
+        </p>
+        <p>
+          É importante notar que o uso excessivo de estilos embutidos pode tornar o código HTML menos legível e mais
+          difícil de ser mantido. Portanto, é recomendado usar essa abordagem apenas para estilos simples e específicos.
+        </p>
+        <h6>EStilos externos (External styles)</h6>
+        <p>
+          Os estilos externos são definidos em arquivos separados com extensão .css. Eles são referenciados na página
+          HTML usando a tag
+          <link>. Dessa forma, os estilos podem ser compartilhados entre várias páginas HTML. Aqui está um exemplo:
+          style.css:
+        </p>
+        <textarea rows="4" class="form-control border-0 bg-dark text-white" readonly>
+      /* Estilos externos */
+      p {
+          color: blue;
+      }</textarea>
+        <br>
+        <h6>Exemplo do HTML usando o estilo</h6>
+        <p>
+          <textarea rows="9" class="form-control border-0 bg-dark text-white" readonly>
+          <html>
+            <head>
+              <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+              <p>Este parágrafo terá a cor azul.</p>
+            </body>
+            </html>            
+        </textarea>
+        </p>
+
+        <p>
+          Com essa abordagem, é possível ter um único arquivo CSS contendo todos os estilos do site, facilitando a
+          manutenção e reutilização dos estilos. <br>Cada uma dessas formas de chamar estilos tem suas próprias
+          vantagens e desvantagens. A escolha depende do contexto e dos requisitos do projeto. Em geral, os estilos
+          externos são mais recomendados para projetos maiores e mais complexos, enquanto os estilos internos e
+          embutidos podem ser mais convenientes para pequenos trechos de código ou personalizações rápidas.
+        </p>
+
+        <h5>Além do que foi apresentado aqui...</h5>
+        <p>
+          Esses são apenas alguns dos conceitos básicos do CSS. À medida que você se familiarizar com esses fundamentos,
+          poderá explorar tópicos mais avançados, como posicionamento de elementos, layout responsivo, animações e muito
+          mais.
+        </p>
+        <p>
+          Uma ótima maneira de praticar esses conceitos é criando uma página web simples e estilizada utilizando CSS
+          puro. Comece com um HTML básico e, em seguida, adicione regras de estilo CSS para personalizar o design da
+          página.
+        </p>
+        </p>
       </div>
     </div>
   </div>
@@ -415,107 +565,301 @@
     <!--conteudo da pagina-->
     <h1 class="titulo-pagina">JavaScript</h1>
     <div class="logo-js"></div>
+    <h4>Um pouco mais sobre Javascript</h4>
+    <p>
+      JavaScript é uma linguagem de programação amplamente usada no desenvolvimento web. É uma linguagem de script
+      interpretada, o que significa que ela é executada diretamente no navegador do cliente. Vamos explorar os
+      conceitos-chave passo a passo.
+    </p>
     <div class="list-group my-3 gap-1">
       <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#sintaxe">Sintaxe básica</a></div>
-      <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#dados">Tipos de Dados</a></div>
+      <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#dados">Variáveis e ipos de Dados</a></div>
       <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#condicionais">Estruturas
-          condicionais simples e composta</a></div>
-      <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#laços">Laços de repetição</a></div>
+        condicionais simples e composta</a></div>
+        <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#laços">Laços de repetição</a></div>
+        <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#eventos"> Eventos</a></div>
       <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#ajax">Rrequisições AJAX</a></div>
       <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#dialogos">Diálogos</a></div>
       <div class="d-flex flex-column"><a class="btn btn-secondary btn-block" href="#funções">Funções</a></div>
     </div>
 
-    <div class="container mb-5" id="sintaxe">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Sintaxe básica</h2>
-          </div>
+
+    <div class="card" id="sintaxe">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Sintaxe básica</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Sintaxe básica
-        </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+        Em JavaScript, você pode criar variáveis usando as palavras-chave var, let ou const. A diferença entre elas está
+        na forma como elas são declaradas e escopos em que podem ser usadas. Aqui está um exemplo de criação de
+        variável:
+
+        <p>
+          var nome = "João"; // variável 'nome' contendo uma string<br>
+          let idade = 25; // variável 'idade' contendo um número inteiro<br>
+          const PI = 3.14; // constante 'PI' contendo um número decimal<br>
+        </p>
+
+        <br>
+        <h6>Operadores:</h6>
+        <p>
+          JavaScript possui diversos operadores, incluindo aritméticos (+, -, *, /),
+          <br>de atribuição (=),de comparação (==, ===, !=, !==, >, <,>=, <=), <br>lógicos (&&, ||, !) e muito mais.
+              <br>
+              <br>
+              Esses operadores permitem manipular valores e executar comparações em suas instruções.
+        </p>
       </div>
     </div>
 
-    <div class="container mb-5" id="dados">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Tipos de dados</h2>
-          </div>
+    <br><br>
+
+    <div class="card" id="dados">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Tipos de dados</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Estrutura de dados
+      </div>
+      <div class="card-body" style="min-height: 10vh">
+
+        <textarea rows="40" class="form-control border-0">
+            JavaScript possui diferentes tipos de dados, incluindo:
+
+            String: sequência de caracteres (entre aspas simples ou duplas).
+            Number: números inteiros ou decimais.
+            Boolean: valor verdadeiro (true) ou falso (false).
+            Array: coleção ordenada de valores.
+            Object: coleção de propriedades relacionadas, representadas por pares chave-valor.
+            Null: indica que uma variável não possui valor.
+            Undefined: indica que uma variável foi declarada, mas não atribuída com valor.
+
+            Arrays são estruturas de dados que armazenam coleções de elementos. Eles podem conter diferentes tipos de dados e são indexados numericamente, começando do índice 0. Aqui está um exemplo de criação e manipulação de um array:
+
+            let frutas = ["maçã", "banana", "laranja"];
+
+            console.log(frutas[0]); // Acessa o elemento de índice 0 (maçã)
+            frutas.push("morango"); // Adiciona um novo elemento ao final do array
+            
+            console.log(frutas.length); // Exibe o tamanho do array (4)
+
+            Objetos:
+            
+            Objetos em JavaScript são coleções de propriedades relacionadas representadas por pares chave-valor. Cada propriedade contém um valor e pode ser acessada usando a notação de ponto ou colchetes. Aqui está um exemplo:
+
+            let pessoa = {
+              nome: "João",
+              idade: 25,
+              profissao: "desenvolvedor"
+            };
+            
+            console.log(pessoa.nome); // Acessa a propriedade 'nome' do objeto (João)
+            console.log(pessoa["idade"]); // Acessa a propriedade 'idade' usando colchetes (25)
+            
+          </textarea>
+      </div>
+    </div>
+    <br><br>
+    <div class="card" id="condicionais">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Estruturas condicionais simples e composta</h2>
         </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+        As estruturas condicionais permitem controlar o fluxo do programa com base em condições. <br>
+        As principais estruturas condicionais em JavaScript são o if, else if e else. <br>
+        <br>
+        Aqui está um exemplo:
+        <br>
+        <textarea rows="8" class="form-control border-0" readonly>
+
+          let idade = 18;
+
+          if (idade >= 18) {
+            console.log("Você é maior de idade.");
+          } else {
+            console.log("Você é menor de idade.");
+          }</textarea>
       </div>
     </div>
 
-    <div class="container mb-5" id="condicionais">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Estruturas condicionais simples e composta</h2>
-          </div>
+    <br><br>
+
+    <div class="card" id="laços">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Laços</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Estruturas condicionais
-        </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+        Os laços de repetição são usados para executar um bloco de código repetidamente até que
+        uma condição seja atendida.
+        Em JavaScript, temos o for, while e do-while. Aqui está um exemplo de um laço for
+        <br>
+        <textarea rows="27" class="form-control border-0" readonly>
+
+          //laço for
+          for (let i = 0; i < 5; i++) {
+            console.log(i);
+          }
+          Isso exibirá os números de 0 a 4 no console.
+
+          //laço while
+          var i=0;
+
+          while ( i < 4){
+            console.log(i);
+            i++;
+          }
+          Isso exibirá os números de 0 até 3
+
+          //laço do-while
+          var i=0;
+          do {  
+            console.log(i);
+            i++;
+          } while(i &lt; 4);
+          
+          Isso exibirá os números de 0 até 3
+
+        </textarea>
       </div>
     </div>
 
-    <div class="container mb-5" id="laços">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Laços</h2>
-          </div>
+    <br><br>
+    <div class="card" id="eventos">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Eventos</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Laços
-        </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+
+        <textarea rows="12" class="form-control border-0" readonly>
+JavaScript é amplamente usado para manipular eventos em páginas da web. Eventos são ações realizadas pelo usuário ou pelo navegador, como clicar em um botão, mover o mouse, etc. Você pode atribuir funções a eventos específicos usando os manipuladores de eventos. 
+
+let botao = document.querySelector("#meuBotao");
+
+botao.addEventListener("click", function() {
+  console.log("O botão foi clicado!");
+});
+          
+        </textarea>
+
       </div>
     </div>
 
-    <div class="container mb-5" id="ajax">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Ajax</h2>
-          </div>
+    <br><br>
+    <div class="card" id="ajax">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Ajax</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Ajax
-        </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+        <textarea rows="35" class="form-control border-0" readonly>
+            AJAX e Requisições Assíncronas:
+            
+            JavaScript permite fazer requisições assíncronas ao servidor usando a técnica AJAX (Asynchronous JavaScript and XML). Isso permite atualizar partes de uma página sem precisar recarregá-la completamente. Você pode usar a API fetch ou bibliotecas como o Axios para fazer requisições assíncronas.
+
+            Esses são apenas alguns dos conceitos fundamentais de JavaScript para desenvolvimento web. À medida que você avança, pode explorar tópicos como manipulação de DOM, manipulação de formulários, programação orientada a objetos em JavaScript e muito mais. JavaScript é uma linguagem rica e versátil, utilizada em diversos aspectos do desenvolvimento web. Espero que essas informações tenham sido úteis para você começar a explorar JavaScript.
+
+      fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data); // Aqui você pode manipular os dados recebidos
+        })
+        .catch(error => {
+          console.log('Ocorreu um erro:', error);
+        });
+
+        Neste exemplo, estamos fazendo uma requisição GET para a URL 'https://api.example.com/data'. A função fetch retorna uma promessa (Promise), que representa o resultado da requisição. Em seguida, usamos os métodos .then() para tratar a resposta.
+
+        No primeiro .then(), convertemos a resposta em formato JSON usando o método .json(). Em seguida, no segundo .then(), podemos acessar e manipular os dados retornados. No exemplo acima, simplesmente exibimos os dados no console.
+        
+        Se ocorrer algum erro durante a requisição, o método .catch() será executado, permitindo que você trate o erro de acordo com suas necessidades.
+        
+        Lembre-se de substituir 'https://api.example.com/data' pela URL real da API que você deseja consumir. Além disso, lembre-se de que algumas APIs podem exigir cabeçalhos adicionais ou configurações específicas.
+          </textarea>
       </div>
     </div>
 
 
-    <div class="container mb-5" id="dialogos">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Diálogos</h2>
-          </div>
-        </div>
-        <div class="card-body" style="min-height: 50vh">
-          Dialogos
+
+    <br><br>
+    <div class="card" id="dialogos">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Diálogos</h2>
         </div>
       </div>
+      <div class="card-body" style="min-height: 6vh">
+        <textarea rows="50" class="form-control border-0" readonly>
+          os diálogos são caixas de diálogo modais que permitem interagir com o usuário exibindo mensagens ou solicitando entrada de dados. Existem três tipos principais de diálogos disponíveis:
+
+          Alert:
+          O diálogo alert é usado para exibir uma mensagem simples para o usuário. Ele contém apenas um botão "OK" e não permite a entrada de dados. 
+          
+          Aqui está um exemplo:
+
+          alert("Esta é uma mensagem de alerta!");
+
+          Confirm:
+O diálogo confirm é usado para solicitar ao usuário uma resposta de confirmação. Ele exibe uma mensagem e dois botões: "OK" e "Cancelar". O valor retornado depende do botão clicado pelo usuário. 
+
+Aqui está um exemplo:
+
+let resposta = confirm("Você tem certeza?");
+if (resposta) {
+  console.log("Usuário confirmou.");
+} else {
+  console.log("Usuário cancelou.");
+}
+
+O valor de resposta será true se o usuário clicar em "OK" e false se o usuário clicar em "Cancelar".
+
+Prompt:
+O diálogo prompt é usado para solicitar ao usuário uma entrada de dados. Ele exibe uma mensagem, um campo de entrada de texto e dois botões: "OK" e "Cancelar". O valor inserido pelo usuário é retornado como uma string. 
+
+Aqui está um exemplo:
+
+let nome = prompt("Digite seu nome:");
+if (nome) {
+  console.log("Olá, " + nome + "!");
+} else {
+  console.log("Nenhum nome foi inserido.");
+}
+
+O valor inserido pelo usuário é armazenado na variável nome. Se o usuário clicar em "OK" sem digitar nada, o valor será uma string vazia. Se o usuário clicar em "Cancelar", o valor será null.
+
+É importante mencionar que os diálogos são considerados bloqueadores, o que significa que eles interrompem a execução do código até que o usuário responda. Portanto, é uma boa prática usá-los com cuidado e evitar interrupções desnecessárias no fluxo do programa.
+
+Esses são os principais diálogos em JavaScript. Eles podem ser úteis para interagir com o usuário de forma simples em aplicações web.
+
+        </textarea>  
+      </div>
     </div>
-
-
-    <div class="container mb-5" id="funções">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h2>Funções</h2>
-          </div>
+    <br><br>
+    <div class="card" id="funções">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Funções</h2>
         </div>
-        <div class="card-body" style="min-height: 50vh">
-          Funçoes
-        </div>
+      </div>
+      <div class="card-body" style="min-height: 5vh">
+        Funções permitem agrupar um conjunto de instruções em um bloco reutilizável. Elas podem receber argumentos e
+        retornar valores. Aqui está um exemplo de função simples:
+        <br><br>
+        <textarea rows="10" class="form-control border-0" readonly>
+
+            function saudacao(nome) {
+              console.log("Olá, " + nome + "!");
+            }
+            
+            saudacao("Maria"); // Chama a função e exibe "Olá, Maria!" no console.
+             
+          </textarea>
       </div>
     </div>
 
@@ -535,16 +879,16 @@
 
   <div class="container" id="contato">
     <h1 class="titulo-pagina">Formulário para Contato</h1>
-      <div class="text-center py-3">
-        <i class="far fa-3x fa-envelope"></i>
-        <i class="fa  fa-3x fa-at"></i>
-        <i class="fa  fa-3x fa-phone"></i>
-        <i class="far fa-3x fa-file"></i>
-      </div>
+    <div class="text-center py-3">
+      <i class="far fa-3x fa-envelope"></i>
+      <i class="fa  fa-3x fa-at"></i>
+      <i class="fa  fa-3x fa-phone"></i>
+      <i class="far fa-3x fa-file"></i>
+    </div>
     <div class="card">
       <div class="card-header">
         <div class="card-title">
-            Fale com o Professor Wanderlei Silva
+          Fale com o Professor Wanderlei Silva
         </div>
       </div>
       <div class="card-body">

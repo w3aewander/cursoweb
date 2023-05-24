@@ -1,26 +1,39 @@
-document.addEventListener('DOMContentLoaded', (evt)=>{
+document.addEventListener('DOMContentLoaded', (evt) => {
 
-    //const conteudo = document.getElementById('conteudo')
+    // window.addEventListener("scroll", function () {
+    //     const cards = document.querySelector("div");
+    //     cards.forEach(element => {
+    //         element.scrollIntoView({ behavior: "smooth" });
+    //     });
+    // });
+// Selecione todos os elementos âncora que têm um atributo "href" iniciado com "#" (para destinos internos)
+const elementosAncora = document.querySelectorAll('a[href^="#"]');
 
-    // document.querySelectorAll('a')
-    //     .forEach( (elm)=>{
-    //     elm.addEventListener('click', (e)=>{
-    //         e.preventDefault();
- 
-    //         carregarPagina(e.target);
-    //     })
-    // })
+// Adicione o evento de clique a cada elemento âncora
+elementosAncora.forEach(function(elemento) {
+  elemento.addEventListener("click", function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
 
-    // carregarPagina('_home')
+    document.body.style.visibility = 'hidden';
+
+    const destino = document.querySelector(this.getAttribute("href"));
+
+    if (destino) {
+      destino.scrollIntoView({ behavior: "smooth" });
+      
+      setTimeout( ()=> {document.body.style.visibility = 'visible'},500 )
+    }
+
+
+    
+
+  });
+});
+
+
 })
 
-// const carregarPagina = (pagina) => {
-//     fetch(`${pagina}` )
-//             .then(resp=>resp.text())
-//             .then(resp=>conteudo.innerHTML = resp)
-// }
-
 // sobe para topo da página
-function subir(){
-    scrollTo(0,0);
+function subir() {
+    scrollTo(0, 0);
 }

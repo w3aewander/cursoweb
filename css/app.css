@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 .text-justify{
     text-align:justify !important;
 }
